@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./header.js";
+import AbtMe from "./abtme";
+import Work from "./work";
+import Edu from "./edu.js";
+import Proj from "./proj.js";
+import Contact from "./contact.js";
+import video from "./images/placeholder-video.mp4";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <video autoPlay muted defaultMuted loop playsInline preload id="myVideo">
+        <source src={video} type="video/mp4" id="video" />
+      </video>
+      <div className="onTopOfVideo">
+        <Header />
+        <AbtMe />
+        <Work />
+        <Edu />
+        <Proj />
+        <Contact />
+      </div>
     </div>
   );
 }
-
 export default App;
