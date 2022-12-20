@@ -56,10 +56,12 @@ function Proj() {
 
   let toggle = (i) => {
     if (selected == i) {
-      document.getElementById("myVideo").style.filter = "grayscale(1)";
+      document.getElementById("myVideo").style.filter =
+        "grayscale(1) brightness(120%)";
       return setSelected(null);
     }
-    document.getElementById("myVideo").style.filter = "grayscale(1) blur(8px)";
+    document.getElementById("myVideo").style.filter =
+      "grayscale(1) brightness(120%) blur(8px)";
     setSelected(i);
   };
 
@@ -168,6 +170,20 @@ const eng_text = [
             src="https://www.google.com/maps/d/u/0/embed?mid=1YSe0ace4ZoFCRwxvt40M_NlanYWIZ-Y&ehbc=2E312F"
             id="googlemap"
           ></iframe>
+        </span>
+        <span>
+          <p>
+            Also thanks to{" "}
+            <a
+              style={{
+                color: "black",
+              }}
+              href="https://www.linkedin.com/in/parsons-christopher/"
+            >
+              Chris Parsons
+            </a>{" "}
+            for recording the video of me drinking tea :)
+          </p>
         </span>
       </>
     ),

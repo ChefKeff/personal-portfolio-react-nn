@@ -61,10 +61,12 @@ function Work() {
 
   let toggle = (i) => {
     if (selected == i) {
-      document.getElementById("myVideo").style.filter = "grayscale(1)";
+      document.getElementById("myVideo").style.filter =
+        "grayscale(1) brightness(120%)";
       return setSelected(null);
     }
-    document.getElementById("myVideo").style.filter = "grayscale(1) blur(8px)";
+    document.getElementById("myVideo").style.filter =
+      "grayscale(1) brightness(120%) blur(8px)";
     setSelected(i);
   };
 

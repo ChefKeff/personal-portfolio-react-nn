@@ -4,7 +4,7 @@ import Work from "./work";
 import Edu from "./edu.js";
 import Proj from "./proj.js";
 import Contact from "./contact.js";
-import video from "./images/placeholder-video.mp4";
+import video from "./images/bakgrundsfilmstest.mp4";
 
 function App() {
   return (

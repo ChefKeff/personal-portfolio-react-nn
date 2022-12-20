@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
-  background-color: white;
+  background-color: black;
 }
 
 header {
@@ -24,7 +24,7 @@ video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    filter: grayscale(1);
+    filter: grayscale(1) brightness(120%);
     transform: scale(1.1);
     transition: all ease-in-out;
 }
